@@ -1,32 +1,73 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <main id="app">
+    <Navbar />
     <router-view/>
-  </div>
+    <footer>
+      <hr class="line"/>
+      <img src="./assets/dango.svg"/>
+      <span>© Copyright - 2021</span>
+    </footer>
+  </main>
 </template>
 
+<script>
+export default {
+  components: {
+    Navbar: () => import('@/components/Navbar.vue')
+  }
+}
+</script>
+
 <style>
+
+:root {
+  --primary: #303841;
+  --secondary: #3a4750;
+  --text-primary: #eee;
+  --text-active: #00adb5;
+  --secondary-dark: #232a30;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--primary);
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.line {
+  width: 95%;
+  border: 1px solid #3A4750;
+  margin: auto;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+footer img {
+  margin-top: 15px;
+  width: 50px;
+}
+
+footer span {
+  color: var(--text-primary);
+  font-size: 18px;
 }
 </style>
