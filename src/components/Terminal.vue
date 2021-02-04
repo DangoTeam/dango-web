@@ -153,7 +153,7 @@ export default {
       const textArray = element.innerHTML.split('')
       element.innerHTML = ''
       setTimeout(() => {
-        for (let i = 0; textArray.length > 1; i++) {
+        for (let i = 0; textArray.length > i; i++) {
           // eslint-disable-next-line no-return-assign
           setTimeout(() => element.innerHTML += textArray[i], 130 * i)
         }

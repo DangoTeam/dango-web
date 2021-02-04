@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Terminal/>
+    <Terminal />
     <p>A future shell, made in Rust and compiled for binary!
       Regardless of your OS, you'll be able to use Dango,still in development,
       if you have a suggestion,don't hesitate to send a pull request!</p>
