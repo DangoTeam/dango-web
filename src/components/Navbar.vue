@@ -1,9 +1,9 @@
 <template>
   <nav>
-    <router-link to="/"><img src="../assets/dango.svg"></router-link>
-    <router-link to="/">HOME</router-link>
-    <router-link to="/installation">INSTALLATION</router-link>
-    <router-link to="/support">SUPPORT</router-link>
+    <router-link :to="{ name: 'Home' }"><img src="../assets/dango.svg"></router-link>
+    <router-link :to="{ name: 'Home' }">HOME</router-link>
+    <router-link :to="{ name: 'Installation' }">INSTALLATION</router-link>
+    <router-link :to="{ name: 'Support' }">SUPPORT</router-link>
   </nav>
 </template>
 

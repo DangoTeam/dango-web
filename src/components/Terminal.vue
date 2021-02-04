@@ -15,34 +15,6 @@
   </div>
 </template>
 
-<script>
-
-export default {
-  name: 'Terminal',
-  methods: {
-    typeWriter (classe) {
-      const element = document.querySelector(classe)
-      const textArray = element.innerHTML.split('')
-      element.innerHTML = ''
-      setTimeout(() => {
-        textArray.forEach((letra, i) => {
-          setTimeout(() => {
-            element.innerHTML += letra
-          }, 130 * i)
-        })
-      }, 5000)
-      setTimeout(() => {
-        const result = document.querySelector('.result')
-        result.style.display = 'block'
-      }, textArray.length * 130 + 5500)
-    }
-  },
-  mounted () {
-    this.typeWriter('.type-it')
-  }
-}
-</script>
-
 <style scoped>
 @import 'https://fonts.googleapis.com/css?family=Ubuntu';
 
@@ -170,3 +142,30 @@ export default {
 }
 
 </style>
+
+<script>
+
+export default {
+  name: 'Terminal',
+  methods: {
+    typeWriter (classe) {
+      const element = document.querySelector(classe)
+      const textArray = element.innerHTML.split('')
+      element.innerHTML = ''
+      setTimeout(() => {
+        for (let i = 0; textArray.length > 1; i++) {
+          // eslint-disable-next-line no-return-assign
+          setTimeout(() => element.innerHTML += textArray[i], 130 * i)
+        }
+      }, 5000)
+      setTimeout(() => {
+        const result = document.querySelector('.result')
+        result.style.display = 'block'
+      }, textArray.length * 130 + 5500)
+    }
+  },
+  mounted () {
+    this.typeWriter('.type-it')
+  }
+}
+</script>
