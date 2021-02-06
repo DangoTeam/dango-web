@@ -2,8 +2,8 @@
   <div class="home">
     <Terminal />
     <p>A future shell, made in Rust and compiled for binary!
-      Regardless of your OS, you'll be able to use Dango,still in development,
-      if you have a suggestion,don't hesitate to send a pull request!</p>
+      Regardless of your OS, you'll be able to use Dango, still in development,
+      if you have a suggestion, don't hesitate to send a pull request!</p>
     <a class="code_button" href="https://github.com/shaundeveloper/dango" target="_blank">CODE</a>
   </div>
 </template>
@@ -26,6 +26,7 @@ p {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  display: flex;
 }
 
 .code_button {

@@ -19,12 +19,12 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu';
 
 .window {
-  width: 600px;
+  width: 250px;
   margin: 75px auto;
   background: var(--secondary);
-  height: 350px;
+  height: 175px;
   border-radius: 5px;
-  display: relative;
+  display: relativ;
   font-family: 'Ubuntu', sans-serif;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -44,9 +44,9 @@
 }
 
 .bash {
-  width: 600px;
+  width: 250px;
   background: var(--secondary-dark);
-  height: 310px;
+  height: 155px;
   border-radius: 5px;
   color: #fff;
   padding-top: 10px;
