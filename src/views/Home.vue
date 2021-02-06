@@ -27,6 +27,7 @@ p {
   line-height: 22px;
   text-align: center;
   display: flex;
+  text-align: center;
 }
 
 .code_button {
