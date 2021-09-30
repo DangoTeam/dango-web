@@ -15,13 +15,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Support",
-  components: {},
-};
-</script>
-
 <style scoped>
 .question {
   margin-top: 20px;

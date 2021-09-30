@@ -4,13 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Installation",
-  components: {},
-};
-</script>
-
 <style scoped>
 .installation {
   text-align: center;

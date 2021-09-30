@@ -1,21 +1,3 @@
-<template>
-  <div class="window">
-    <div class="controls">
-      <button class="buttons close" id="close"></button>
-      <button class="buttons maximize"></button>
-      <button class="buttons minimize"></button>
-      <div class="title">Dango</div>
-    </div>
-    <div class="bash">
-      <span id="span">shaun ~ </span>
-      <span class="type-it blink">dango --version</span>
-      <br />
-      <span class="result" style="display: none">v0.1.0</span>
-    </div>
-  </div>
-</template>
-
-<style scoped>
 @import "https://fonts.googleapis.com/css?family=Ubuntu";
 
 .window {
@@ -141,30 +123,33 @@
     opacity: 0;
   }
 }
-</style>
 
-<script>
-export default {
-  name: "Terminal",
-  methods: {
-    typeWriter(classe) {
-      const element = document.querySelector(classe);
-      const textArray = element.innerHTML.split("");
-      element.innerHTML = "";
-      setTimeout(() => {
-        for (let i = 0; textArray.length > i; i++) {
-          // eslint-disable-next-line no-return-assign
-          setTimeout(() => (element.innerHTML += textArray[i]), 130 * i);
-        }
-      }, 5000);
-      setTimeout(() => {
-        const result = document.querySelector(".result");
-        result.style.display = "block";
-      }, textArray.length * 130 + 5500);
-    },
-  },
-  mounted() {
-    this.typeWriter(".type-it");
-  },
-};
-</script>
+
+p {
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  display: flex;
+  text-align: center;
+}
+
+.code_button {
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 24px;
+  border: 2px solid var(--text-active);
+  border-radius: 19px;
+  margin: auto;
+  display: block;
+  width: max-content;
+  padding: 5px 10px 5px 10px;
+  transition: all 0.2s;
+  margin-top: 15px;
+}
+
+.code_button:hover {
+  background: var(--text-active);
+}
+

@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import Home from "@/views/Home.vue";
+import Home from "@/views/HomePage";
 import Installation from "@/views/Installation.vue";
 import Support from "@/views/Support.vue";
 
