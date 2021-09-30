@@ -13,7 +13,7 @@
 <script>
 export default {
   components: {
-    Navbar: () => import("@/components/Navbar.vue"),
+    Navbar: () => import("@/components/Navbar"),
   },
 };
 </script>
