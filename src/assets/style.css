@@ -1,5 +1,8 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu";
 
+@font-face {
+  font-family: 'Hack Nerd';
+  src: url('./HackNerd.ttf')
+}
 :root {
   --primary: #303841;
   --secondary: #3a4750;
