@@ -7,7 +7,7 @@
       <div class="title">Dango</div>
     </div>
     <div class="bash">
-      <span id="span">shaun ~ </span>
+      <span id="span">dango ~ </span>
       <span class="type-it blink">dango --version</span>
       <br />
       <span class="result" style="display: none">v0.1.0</span>
