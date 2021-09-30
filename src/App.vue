@@ -4,7 +4,7 @@
     <router-view />
     <footer>
       <hr class="line" />
-      <img src="./assets/dango.svg" />
+      <img src="./assets/dango.svg" width="50px" />
       <span>© Copyright - 2021</span>
     </footer>
   </main>

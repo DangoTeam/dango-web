@@ -27,7 +27,7 @@
   width: 600px;
   background: var(--secondary-dark);
   height: 310px;
-  border-radius: 5px;
+  border-bottom-radius: 5px;
   color: #fff;
   padding-top: 10px;
 }
