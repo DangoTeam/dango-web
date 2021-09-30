@@ -4,10 +4,11 @@
   src: url('./HackNerd.ttf')
 }
 :root {
-  --primary: #303841;
-  --secondary: #3a4750;
-  --text-primary: #eee;
-  --text-active: #00adb5;
+  --background: #303841;
+  --second-bg: #3a4750;
+  --text: #eee;
+  
+  --primary: #80ff80;
   --secondary-dark: #232a30;
 }
 
@@ -22,7 +23,13 @@
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary);
+
+  background: var(--background);
+  color: var(--text);
+}
+
+a{
+  color: var(--text);
 }
 
 .line {
@@ -39,7 +46,6 @@ footer {
   flex-direction: column;
   align-items: center;
 
-  color: var(--text-primary);
   font-size: 18px;
 }
 
