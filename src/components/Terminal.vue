@@ -7,16 +7,16 @@
       <div class="title">Dango</div>
     </div>
     <div class="bash">
-        <span id="span">shaun ~ </span>
-        <span class="type-it blink">dango --version</span>
-        <br >
-        <span class="result" style="display: none;">v0.1.0</span>
+      <span id="span">shaun ~ </span>
+      <span class="type-it blink">dango --version</span>
+      <br />
+      <span class="result" style="display: none">v0.1.0</span>
     </div>
   </div>
 </template>
 
 <style scoped>
-@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import "https://fonts.googleapis.com/css?family=Ubuntu";
 
 .window {
   width: 600px;
@@ -25,7 +25,7 @@
   height: 350px;
   border-radius: 5px;
   display: relative;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -126,46 +126,45 @@
 }
 
 .blink::after {
-  content: '|';
+  content: "|";
   opacity: 1;
   display: inline-block;
-  animation: blink .7s infinite;
+  animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
     opacity: 0;
   }
 }
-
 </style>
 
 <script>
-
 export default {
-  name: 'Terminal',
+  name: "Terminal",
   methods: {
-    typeWriter (classe) {
-      const element = document.querySelector(classe)
-      const textArray = element.innerHTML.split('')
-      element.innerHTML = ''
+    typeWriter(classe) {
+      const element = document.querySelector(classe);
+      const textArray = element.innerHTML.split("");
+      element.innerHTML = "";
       setTimeout(() => {
         for (let i = 0; textArray.length > i; i++) {
           // eslint-disable-next-line no-return-assign
-          setTimeout(() => element.innerHTML += textArray[i], 130 * i)
+          setTimeout(() => (element.innerHTML += textArray[i]), 130 * i);
         }
-      }, 5000)
+      }, 5000);
       setTimeout(() => {
-        const result = document.querySelector('.result')
-        result.style.display = 'block'
-      }, textArray.length * 130 + 5500)
-    }
+        const result = document.querySelector(".result");
+        result.style.display = "block";
+      }, textArray.length * 130 + 5500);
+    },
   },
-  mounted () {
-    this.typeWriter('.type-it')
-  }
-}
+  mounted() {
+    this.typeWriter(".type-it");
+  },
+};
 </script>

@@ -6,10 +6,9 @@
 
 <script>
 export default {
-  name: 'Installation',
-  components: {
-  }
-}
+  name: "Installation",
+  components: {},
+};
 </script>
 
 <style scoped>
@@ -18,6 +17,6 @@ export default {
 }
 
 span {
-  color: var(--text-primary)
+  color: var(--text-primary);
 }
 </style>

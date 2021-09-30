@@ -1,10 +1,10 @@
 <template>
   <main id="app">
     <Navbar />
-    <router-view/>
+    <router-view />
     <footer>
-      <hr class="line"/>
-      <img src="./assets/dango.svg"/>
+      <hr class="line" />
+      <img src="./assets/dango.svg" />
       <span>© Copyright - 2021</span>
     </footer>
   </main>
@@ -13,13 +13,12 @@
 <script>
 export default {
   components: {
-    Navbar: () => import('@/components/Navbar.vue')
-  }
-}
+    Navbar: () => import("@/components/Navbar.vue"),
+  },
+};
 </script>
 
 <style>
-
 :root {
   --primary: #303841;
   --secondary: #3a4750;
@@ -47,7 +46,7 @@ body {
 
 .line {
   width: 95%;
-  border: 1px solid #3A4750;
+  border: 1px solid #3a4750;
   margin: auto;
 }
 

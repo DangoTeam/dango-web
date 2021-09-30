@@ -1,6 +1,8 @@
 <template>
   <nav>
-    <router-link :to="{ name: 'Home' }"><img src="../assets/dango.svg"></router-link>
+    <router-link :to="{ name: 'Home' }"
+      ><img src="../assets/dango.svg"
+    /></router-link>
     <router-link :to="{ name: 'Home' }">HOME</router-link>
     <router-link :to="{ name: 'Installation' }">INSTALLATION</router-link>
     <router-link :to="{ name: 'Support' }">SUPPORT</router-link>
@@ -9,12 +11,11 @@
 
 <script>
 export default {
-  name: 'Navbar'
-}
+  name: "Navbar",
+};
 </script>
 
 <style scoped>
-
 nav {
   display: flex;
   justify-content: center;
@@ -25,7 +26,7 @@ nav img {
   position: absolute;
   left: 15px;
   top: 15px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 nav img:hover {
@@ -41,12 +42,12 @@ a {
   text-align: right;
   color: var(--text-primary);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: all .2s;
+  transition: all 0.2s;
   padding: 15px;
 }
 
 a:hover {
-  transition: .3s;
+  transition: 0.3s;
   color: var(--text-active);
 }
 </style>
