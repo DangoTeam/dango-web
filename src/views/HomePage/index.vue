@@ -8,7 +8,7 @@
     </p>
     <a
       class="code_button"
-      href="https://github.com/shaundeveloper/dango"
+      href="https://github.com/Dangos-Team/dango"
       target="_blank"
       >CODE</a
     >
