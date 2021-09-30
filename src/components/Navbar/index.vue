@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <NavItem href="/">
+    <router-link to="/">
       <img src="@/assets/dango.svg" />
-    </NavItem>
+    </router-link>
     <ul>
       <NavItem href="/">Home</NavItem>
       <NavItem href="/installation">Installation</NavItem>
