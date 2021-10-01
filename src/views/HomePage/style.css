@@ -1,6 +1,7 @@
 .window {
   width: 600px;
   margin: 75px auto;
+  font-family: 'Hack Nerd', sans-serif;
   background: var(--secondary);
   height: 350px;
   border-radius: 5px;
