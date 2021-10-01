@@ -10,7 +10,7 @@
       <span id="span">dango ~ </span>
       <span class="type-it blink">dango --version</span>
       <br />
-      <span class="result" style="display: none">v0.1.0</span>
+      <span class="result" style="display: none">v0.0.2</span>
     </div>
   </div>
 </template>
