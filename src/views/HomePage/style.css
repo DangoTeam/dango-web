@@ -1,20 +1,23 @@
 .window {
-  width: 600px;
-  margin: 75px auto;
   font-family: 'Hack Nerd', sans-serif;
-  background: var(--secondary);
+  
+  width: 600px;
   height: 350px;
+  margin: 75px auto;
   border-radius: 5px;
+  
+  background: var(--secondary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .bash {
   width: 600px;
-  background: #232a30;
   height: 310px;
-  border-bottom-radius: 5px;
-  color: #fff;
   padding-top: 10px;
+  border-bottom-radius: 5px;
+  
+  color: #fff;
+  background: #232a30;
 }
 
 .buttons {
@@ -43,7 +46,7 @@
   padding: 10px;
 }
 
-#span {
+.bash > span:first-child {
   color: var(--primary);
   padding: 0 0 10px 10px;
 }
