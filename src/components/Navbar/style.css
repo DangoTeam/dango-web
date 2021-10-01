@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+}
+
+nav img {
+  width: 33.5px;
+  
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+nav img:hover {
+  transform: scale(1.2);
+}
+
+nav ul{
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+nav li {
+  padding: 15px 0;
+}
+nav li a{
+  color: var(--text);
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav a:hover {
+  color: var(--primary);
+  
+  transition: all .5s;
+}
+

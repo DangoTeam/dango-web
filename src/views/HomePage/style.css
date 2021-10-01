@@ -1,0 +1,26 @@
+p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  display: flex;
+  text-align: center;
+}
+
+.code_button {
+  font-weight: bold;
+  font-size: 24px;
+  border: 2px solid var(--primary);
+  border-radius: 19px;
+  margin: auto;
+  display: block;
+  width: max-content;
+  padding: 5px 10px 5px 10px;
+  transition: all 0.2s;
+  margin-top: 15px;
+}
+
+.code_button:hover {
+  background: var(--primary);
+}
+

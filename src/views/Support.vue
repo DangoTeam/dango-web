@@ -4,17 +4,16 @@
     <br />
     <span class="join">Join our support server!</span>
     <br />
-    <iframe src="https://discord.com/widget?id=785315334127091742&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <iframe
+      src="https://discord.com/widget?id=785315334127091742&theme=dark"
+      width="350"
+      height="500"
+      allowtransparency="true"
+      frameborder="0"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+    ></iframe>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'Support',
-  components: {
-  }
-}
-</script>
 
 <style scoped>
 .question {
