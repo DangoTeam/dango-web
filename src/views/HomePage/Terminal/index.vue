@@ -40,4 +40,4 @@ export default {
   },
 };
 </script>
-<style src="@/views/HomePage/style.css" scoped></style>
+<style src="@/views/HomePage/Terminal/style.css" scoped></style>

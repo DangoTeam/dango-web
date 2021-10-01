@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import Terminal from "@/views/HomePage/Terminal.vue";
+import Terminal from "@/views/HomePage/Terminal";
 
 export default {
   name: "Home",
